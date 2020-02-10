@@ -22,8 +22,6 @@ public class SortTest {
         assertThat(bubbleSort.sort(unsorted), is(sorted));
     }
 
-
-
     @Test
     public void sortings(){
         assertSorted(intList(), intList());
@@ -44,9 +42,5 @@ public class SortTest {
         for(int i = 0; i<n-1; i++)
             assertTrue(sorted.get(i)<=sorted.get(i+1));
     }
-
-    private List<Integer> sort(List<Integer> list){
-
-        return bubbleSort.sort(list);
-    }
+    
 }
