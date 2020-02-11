@@ -1,6 +1,4 @@
 # Project exclude paths
 /.gradle/
 build/
-\.idea/jarRepositories.xml
-\.idea/misc.xml
-\.idea/gradle.xml
+.idea/
