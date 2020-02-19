@@ -1,4 +1,5 @@
 package com.gaurav.testclasses;
+import com.gaurav.strings.CountAndSay;
 import org.junit.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -20,44 +21,20 @@ Note: Each term of the sequence of integers will be represented as a string.
 https://www.careercup.com/question?id=4425679
  */
 public class CountAndSayTest {
-    public String countAndSay(int n) {
-        if(n==1){
-            return "1";
-        }
-
-        String prevNumber = countAndSay(n-1);
-
-        String returnString = "";
-
-        int index = 0;
-        while(index < prevNumber.length()){
-            char currentChar = prevNumber.charAt(index);
-            int count = 1;
-            int cursor = index+1;
-            if(cursor == prevNumber.length()){
-                returnString = returnString + String.valueOf(count) + String.valueOf(currentChar);
-                break;
-            }
-            while(cursor < prevNumber.length() && prevNumber.charAt(cursor) == currentChar){
-                count++;
-                cursor++;
-            }
-            returnString = returnString + String.valueOf(count) + String.valueOf(currentChar);
-            index = index + count;
-        }
-
-        return returnString;
-    }
 
 
     @Test
     public void testCountAndSay(){
-        assertThat(countAndSay(1),is("1"));
-        assertThat(countAndSay(2),is("11"));
-        assertThat(countAndSay(3),is("21"));
-        assertThat(countAndSay(4),is("1211"));
-        assertThat(countAndSay(5),is("111221"));
-        assertThat(countAndSay(6),is("312211"));
-        assertThat(countAndSay(7),is("13112221"));
+        assertThat(getCountAndSay(1),is("1"));
+        assertThat(getCountAndSay(2),is("11"));
+        assertThat(getCountAndSay(3),is("21"));
+        assertThat(getCountAndSay(4),is("1211"));
+        assertThat(getCountAndSay(5),is("111221"));
+        assertThat(getCountAndSay(6),is("312211"));
+        assertThat(getCountAndSay(7),is("13112221"));
+    }
+
+    private String getCountAndSay(int i) {
+        return new CountAndSay().countAndSay(i);
     }
 }
