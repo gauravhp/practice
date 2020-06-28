@@ -1,8 +1,8 @@
-package com.gaurav.testclasses;
+package com.leetcode.easy;
 
 import org.junit.Test;
 
-import static com.gaurav.testclasses.Common.getListNodes;
+import static com.leetcode.easy.Common.getListNodes;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.*;

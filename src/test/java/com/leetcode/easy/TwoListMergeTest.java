@@ -1,4 +1,4 @@
-package com.gaurav.testclasses;
+package com.leetcode.easy;
 /*
 Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
 
@@ -9,9 +9,6 @@ Output: 1->1->2->3->4->4
  */
 
 import org.junit.Test;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.is;

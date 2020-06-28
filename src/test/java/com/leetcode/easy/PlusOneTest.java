@@ -1,4 +1,4 @@
-package com.gaurav.testclasses;
+package com.leetcode.easy;
 /*
 Given a non-empty array of digits representing a non-negative integer, plus one to the integer.
 
@@ -19,9 +19,7 @@ Explanation: The array represents the integer 4321.
  */
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 

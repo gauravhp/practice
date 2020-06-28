@@ -1,4 +1,4 @@
-package com.gaurav.testclasses;
+package com.leetcode.easy;
 
 import java.util.Objects;
 

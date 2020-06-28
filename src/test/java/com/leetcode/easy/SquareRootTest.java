@@ -1,4 +1,4 @@
-package com.gaurav.testclasses;
+package com.leetcode.easy;
 /*
 Implement int sqrt(int x).
 

@@ -1,4 +1,4 @@
-package com.gaurav.testclasses;
+package com.leetcode.easy;
 
 import com.gaurav.sorting.BubbleSort;
 import org.junit.Test;

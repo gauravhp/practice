@@ -1,4 +1,4 @@
-package com.gaurav.testclasses;
+package com.leetcode.easy;
 /*
 Given two binary strings, return their sum (also a binary string).
 
