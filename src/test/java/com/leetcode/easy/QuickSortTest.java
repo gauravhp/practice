@@ -1,6 +1,5 @@
 package com.leetcode.easy;
 
-import com.gaurav.sorting.QuickSort;
 import org.junit.Test;
 
 import java.util.ArrayList;

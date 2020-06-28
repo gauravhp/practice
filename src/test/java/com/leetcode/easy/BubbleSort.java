@@ -1,4 +1,4 @@
-package com.gaurav.sorting;
+package com.leetcode.easy;
 
 import java.util.List;
 

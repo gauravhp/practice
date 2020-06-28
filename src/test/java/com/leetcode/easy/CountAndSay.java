@@ -1,4 +1,4 @@
-package com.gaurav.strings;
+package com.leetcode.easy;
 /*
 The count-and-say sequence is the sequence of integers with the first five terms as following:
 

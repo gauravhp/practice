@@ -1,6 +1,5 @@
 package com.leetcode.easy;
 
-import com.gaurav.primefactors.PrimeFactors;
 import org.hamcrest.CoreMatchers;
 import org.hamcrest.Matcher;
 import org.junit.Assert;
