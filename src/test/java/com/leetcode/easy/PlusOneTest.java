@@ -17,6 +17,7 @@ Input: [4,3,2,1]
 Output: [4,3,2,2]
 Explanation: The array represents the integer 4321.
  */
+import com.leetcode.common.DataGenerator;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -58,16 +59,16 @@ public class PlusOneTest {
 
     @Test
     public void testPlusOne(){
-        assertThat(plusOne(Common.intArray(0)), is(Common.intArray(1)));
-        assertThat(plusOne(Common.intArray(1)), is(Common.intArray(2)));
-        assertThat(plusOne(Common.intArray(1,0)), is(Common.intArray(1,1)));
-        assertThat(plusOne(Common.intArray(1,8,9)), is(Common.intArray(1,9,0)));
-        assertThat(plusOne(Common.intArray(9)), is(Common.intArray(1,0)));
-        assertThat(plusOne(Common.intArray(1,2,3)), is(Common.intArray(1,2,4)));
-        assertThat(plusOne(Common.intArray(4,3,2,1)), is(Common.intArray(4,3,2,2)));
-        assertThat(plusOne(Common.intArray(1,9,9)), is(Common.intArray(2,0,0)));
-        assertThat(plusOne(Common.intArray(9,9,9)), is(Common.intArray(1,0,0,0)));
-        assertThat(plusOne(Common.intArray(9,8,7,6,5,4,3,2,1,0)), is(Common.intArray(9,8,7,6,5,4,3,2,1,1)));
-        assertThat(plusOne(Common.intArray(7,2,8,5,0,9,1,2,9,5,3,6,6,7,3,2,8,4,3,7,9,5,7,7,4,7,4,9,4,7,0,1,1,1,7,4,0,0,6)), is(Common.intArray(7,2,8,5,0,9,1,2,9,5,3,6,6,7,3,2,8,4,3,7,9,5,7,7,4,7,4,9,4,7,0,1,1,1,7,4,0,0,7)));
+        assertThat(plusOne(DataGenerator.intArray(0)), is(DataGenerator.intArray(1)));
+        assertThat(plusOne(DataGenerator.intArray(1)), is(DataGenerator.intArray(2)));
+        assertThat(plusOne(DataGenerator.intArray(1,0)), is(DataGenerator.intArray(1,1)));
+        assertThat(plusOne(DataGenerator.intArray(1,8,9)), is(DataGenerator.intArray(1,9,0)));
+        assertThat(plusOne(DataGenerator.intArray(9)), is(DataGenerator.intArray(1,0)));
+        assertThat(plusOne(DataGenerator.intArray(1,2,3)), is(DataGenerator.intArray(1,2,4)));
+        assertThat(plusOne(DataGenerator.intArray(4,3,2,1)), is(DataGenerator.intArray(4,3,2,2)));
+        assertThat(plusOne(DataGenerator.intArray(1,9,9)), is(DataGenerator.intArray(2,0,0)));
+        assertThat(plusOne(DataGenerator.intArray(9,9,9)), is(DataGenerator.intArray(1,0,0,0)));
+        assertThat(plusOne(DataGenerator.intArray(9,8,7,6,5,4,3,2,1,0)), is(DataGenerator.intArray(9,8,7,6,5,4,3,2,1,1)));
+        assertThat(plusOne(DataGenerator.intArray(7,2,8,5,0,9,1,2,9,5,3,6,6,7,3,2,8,4,3,7,9,5,7,7,4,7,4,9,4,7,0,1,1,1,7,4,0,0,6)), is(DataGenerator.intArray(7,2,8,5,0,9,1,2,9,5,3,6,6,7,3,2,8,4,3,7,9,5,7,7,4,7,4,9,4,7,0,1,1,1,7,4,0,0,7)));
     }
 }

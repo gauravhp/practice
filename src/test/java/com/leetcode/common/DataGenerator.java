@@ -1,9 +1,9 @@
-package com.leetcode.easy;
+package com.leetcode.common;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class Common {
+public class DataGenerator {
     public static int[] intArray(Integer... ints) {
         int[] newArray = new int[ints.length];
         int index = 0;

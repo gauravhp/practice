@@ -19,6 +19,7 @@ Your function should return length = 5, with the first five elements of nums bei
 
 It doesn't matter what values are set beyond the returned length.
  */
+import com.leetcode.common.DataGenerator;
 import org.junit.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -28,19 +29,19 @@ public class RemoveDuplicatesFromSortedArrayTest {
 
     @Test
     public void testRemovalOfDuplicates(){
-        assertThat(removeDuplicates(Common.intArray()), is(0));
-        assertThat(removeDuplicates(Common.intArray(1)),is(1));
-        assertThat(removeDuplicates(Common.intArray(1,2)),is(2));
-        assertThat(removeDuplicates(Common.intArray(1,1)),is(1));
-        performLengthAndInputTest(Common.intArray(1,1,2),Common.intArray(1,2,2),2);
-        performLengthAndInputTest(Common.intArray(1,2,2),Common.intArray(1,2,2),2);
-        performLengthAndInputTest(Common.intArray(1,2,3),Common.intArray(1,2,3),3);
-        performLengthAndInputTest(Common.intArray(1,2,3,4),Common.intArray(1,2,3,4),4);
-        performLengthAndInputTest(Common.intArray(2,2,3,4),Common.intArray(2,3,4,4),3);
-        performLengthAndInputTest(Common.intArray(2,3,4,4),Common.intArray(2,3,4,4),3);
-        performLengthAndInputTest(Common.intArray(2,2,3,3),Common.intArray(2,3,3,3),2);
-        performLengthAndInputTest(Common.intArray(2,2,2,3),Common.intArray(2,3,2,3),2);
-        performLengthAndInputTest(Common.intArray(2,3,3,3),Common.intArray(2,3,3,3),2);
+        assertThat(removeDuplicates(DataGenerator.intArray()), is(0));
+        assertThat(removeDuplicates(DataGenerator.intArray(1)),is(1));
+        assertThat(removeDuplicates(DataGenerator.intArray(1,2)),is(2));
+        assertThat(removeDuplicates(DataGenerator.intArray(1,1)),is(1));
+        performLengthAndInputTest(DataGenerator.intArray(1,1,2), DataGenerator.intArray(1,2,2),2);
+        performLengthAndInputTest(DataGenerator.intArray(1,2,2), DataGenerator.intArray(1,2,2),2);
+        performLengthAndInputTest(DataGenerator.intArray(1,2,3), DataGenerator.intArray(1,2,3),3);
+        performLengthAndInputTest(DataGenerator.intArray(1,2,3,4), DataGenerator.intArray(1,2,3,4),4);
+        performLengthAndInputTest(DataGenerator.intArray(2,2,3,4), DataGenerator.intArray(2,3,4,4),3);
+        performLengthAndInputTest(DataGenerator.intArray(2,3,4,4), DataGenerator.intArray(2,3,4,4),3);
+        performLengthAndInputTest(DataGenerator.intArray(2,2,3,3), DataGenerator.intArray(2,3,3,3),2);
+        performLengthAndInputTest(DataGenerator.intArray(2,2,2,3), DataGenerator.intArray(2,3,2,3),2);
+        performLengthAndInputTest(DataGenerator.intArray(2,3,3,3), DataGenerator.intArray(2,3,3,3),2);
         //performLengthAndInputTest(Common.intArray(0,0,1,1,1,2,2,3,3,4),Common.intArray(0,1,2,3,4,0,1,1,2,3),5);
     }
 

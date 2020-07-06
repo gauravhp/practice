@@ -1,5 +1,6 @@
 package com.leetcode.easy;
 
+import com.leetcode.common.DataGenerator;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -34,23 +35,23 @@ public class RemoveElements {
 
     @Test
     public void testRemoveElements(){
-        assertThat(removeElement(Common.intArray(),0), is(0));
+        assertThat(removeElement(DataGenerator.intArray(),0), is(0));
 
-        assertThat(removeElement(Common.intArray(1),1), is(0));
-        assertThat(removeElement(Common.intArray(1),2), is(1));
+        assertThat(removeElement(DataGenerator.intArray(1),1), is(0));
+        assertThat(removeElement(DataGenerator.intArray(1),2), is(1));
 
-        assertThat(removeElement(Common.intArray(1,2),3), is(2));
-        assertThat(removeElement(Common.intArray(1,2),1), is(1));
-        assertThat(removeElement(Common.intArray(1,2),2), is(1));
+        assertThat(removeElement(DataGenerator.intArray(1,2),3), is(2));
+        assertThat(removeElement(DataGenerator.intArray(1,2),1), is(1));
+        assertThat(removeElement(DataGenerator.intArray(1,2),2), is(1));
 
-        assertThat(removeElement(Common.intArray(1,2,3),4), is(3));
-        assertThat(removeElement(Common.intArray(1,2,3),1), is(2));
-        assertThat(removeElement(Common.intArray(1,2,3),2), is(2));
-        assertThat(removeElement(Common.intArray(1,2,3),3), is(2));
+        assertThat(removeElement(DataGenerator.intArray(1,2,3),4), is(3));
+        assertThat(removeElement(DataGenerator.intArray(1,2,3),1), is(2));
+        assertThat(removeElement(DataGenerator.intArray(1,2,3),2), is(2));
+        assertThat(removeElement(DataGenerator.intArray(1,2,3),3), is(2));
 
-        assertThat(removeElement(Common.intArray(3,2,2,3),3), is(2));
+        assertThat(removeElement(DataGenerator.intArray(3,2,2,3),3), is(2));
 
-        assertThat(removeElement(Common.intArray(0,1,2,2,3,0,4,2),2), is(5));
+        assertThat(removeElement(DataGenerator.intArray(0,1,2,2,3,0,4,2),2), is(5));
     }
 
 }

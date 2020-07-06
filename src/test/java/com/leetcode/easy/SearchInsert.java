@@ -1,4 +1,5 @@
 package com.leetcode.easy;
+import com.leetcode.common.DataGenerator;
 import org.junit.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -47,17 +48,17 @@ public class SearchInsert {
 
     @Test
     public void testSearchInsert(){
-        assertThat(searchInsert(Common.intArray(),1),is(0));
-        assertThat(searchInsert(Common.intArray(1),0),is(0));
-        assertThat(searchInsert(Common.intArray(0),1),is(1));
-        assertThat(searchInsert(Common.intArray(1,2),1),is(0));
-        assertThat(searchInsert(Common.intArray(1,2),2),is(1));
-        assertThat(searchInsert(Common.intArray(1,2),3),is(2));
-        assertThat(searchInsert(Common.intArray(1,2),0),is(0));
-        assertThat(searchInsert(Common.intArray(1,3),2),is(1));
-        assertThat(searchInsert(Common.intArray(1,3,5,6),5),is(2));
-        assertThat(searchInsert(Common.intArray(1,3,5,6),2),is(1));
-        assertThat(searchInsert(Common.intArray(1,3,5,6),7),is(4));
-        assertThat(searchInsert(Common.intArray(1,3,5,6),0),is(0));
+        assertThat(searchInsert(DataGenerator.intArray(),1),is(0));
+        assertThat(searchInsert(DataGenerator.intArray(1),0),is(0));
+        assertThat(searchInsert(DataGenerator.intArray(0),1),is(1));
+        assertThat(searchInsert(DataGenerator.intArray(1,2),1),is(0));
+        assertThat(searchInsert(DataGenerator.intArray(1,2),2),is(1));
+        assertThat(searchInsert(DataGenerator.intArray(1,2),3),is(2));
+        assertThat(searchInsert(DataGenerator.intArray(1,2),0),is(0));
+        assertThat(searchInsert(DataGenerator.intArray(1,3),2),is(1));
+        assertThat(searchInsert(DataGenerator.intArray(1,3,5,6),5),is(2));
+        assertThat(searchInsert(DataGenerator.intArray(1,3,5,6),2),is(1));
+        assertThat(searchInsert(DataGenerator.intArray(1,3,5,6),7),is(4));
+        assertThat(searchInsert(DataGenerator.intArray(1,3,5,6),0),is(0));
     }
 }

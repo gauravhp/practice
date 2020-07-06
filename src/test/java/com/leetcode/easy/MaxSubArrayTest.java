@@ -9,6 +9,7 @@ Output: 6
 Explanation: [4,-1,2,1] has the largest sum = 6.
 
  */
+import com.leetcode.common.DataGenerator;
 import org.junit.Test;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -25,14 +26,14 @@ public class MaxSubArrayTest {
 
     @Test
     public void testMaxSubArray(){
-        assertThat(maxSubArray(Common.intArray(1)),is(1));
-        assertThat(maxSubArray(Common.intArray(1,2)),is(3));
-        assertThat(maxSubArray(Common.intArray(-1,2)),is(2));
-        assertThat(maxSubArray(Common.intArray(1,-2)),is(1));
-        assertThat(maxSubArray(Common.intArray(-1,-2)),is(-1));
-        assertThat(maxSubArray(Common.intArray(1,2,3)),is(6));
-        assertThat(maxSubArray(Common.intArray(-1,2,3)),is(5));
-        assertThat(maxSubArray(Common.intArray(1,-2,3)),is(3));
-        assertThat(maxSubArray(Common.intArray(-2,1,-3,4,-1,2,1,-5,4)),is(6));
+        assertThat(maxSubArray(DataGenerator.intArray(1)),is(1));
+        assertThat(maxSubArray(DataGenerator.intArray(1,2)),is(3));
+        assertThat(maxSubArray(DataGenerator.intArray(-1,2)),is(2));
+        assertThat(maxSubArray(DataGenerator.intArray(1,-2)),is(1));
+        assertThat(maxSubArray(DataGenerator.intArray(-1,-2)),is(-1));
+        assertThat(maxSubArray(DataGenerator.intArray(1,2,3)),is(6));
+        assertThat(maxSubArray(DataGenerator.intArray(-1,2,3)),is(5));
+        assertThat(maxSubArray(DataGenerator.intArray(1,-2,3)),is(3));
+        assertThat(maxSubArray(DataGenerator.intArray(-2,1,-3,4,-1,2,1,-5,4)),is(6));
     }
 }
