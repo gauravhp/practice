@@ -34,4 +34,22 @@ public class DataGenerator {
         }
         return head;
     }
+
+    public static SinglyLinkedListNode getListNodes1(Integer... ints) {
+        if(ints.length==0){
+            return null;
+        }
+        SinglyLinkedListNode head = new SinglyLinkedListNode(ints[0]);
+        if(ints.length>1) {
+            SinglyLinkedListNode current = head;
+            SinglyLinkedListNode tail = new SinglyLinkedListNode(ints[1]);
+            for(int i = 2; i < ints.length; i++){
+                current.next = tail;
+                current = current.next;
+                tail = new SinglyLinkedListNode(ints[i]);
+            }
+            current.next = tail;
+        }
+        return head;
+    }
 }

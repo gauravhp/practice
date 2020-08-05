@@ -5,7 +5,7 @@ import java.util.Objects;
 public class ListNode {
     public int val;
     public ListNode next;
-    ListNode(int x) { val = x; }
+    public ListNode(int x) { val = x; }
 
     @Override
     public boolean equals(Object o) {
@@ -19,5 +19,13 @@ public class ListNode {
     @Override
     public int hashCode() {
         return Objects.hash(val, next);
+    }
+
+    @Override
+    public String toString() {
+        return "ListNode{" +
+                "val=" + val +
+                ", next=" + next +
+                '}';
     }
 }
