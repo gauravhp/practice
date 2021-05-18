@@ -1,3 +1,3 @@
 # practice
 
-This is a coding practice to learn and understand TDD
+This is a coding practice to learn TDD
